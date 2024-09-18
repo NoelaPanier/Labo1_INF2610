@@ -12,14 +12,17 @@
 
 void part21 ()
 {
-    // TODO
-
+    char str[] = "77dbcb01f571f1c32g196c3a7d27f62e (printed using printf)";
+    for (int i = 0; str[i] != '\0'; i++) {
+        printf("%c", str[i]);
+    }
+    write(1,"77dbcb01f571f1c32g196c3a7d27f62e (printed using write)\n",55);
 }
 
 void part22 ()
 {
-    // TODO
-    
+    setvbuf(stdout, NULL, _IONBF, 0);
+    part21();
 }
 
 int main (int argc, char* argv[])
