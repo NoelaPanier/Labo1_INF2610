@@ -12,18 +12,23 @@
 #include <unistd.h>
 
 int main () {
-    int fd = open("systemcalls_output2.txt",O_WRONLY | O_TRUNC);
-    ssize_t bytesRead;
+    int fd = open("systemcalls_output2.txt", O_WRONLY | O_TRUNC);
+ 
     if (fd == -1){
-        printf("Appel système open a échoué");
-        exit(1);
+        perror("Appel système open a échoué");
+        exit(EXIT_FAILURE);
     }
-    printf("Saisissez votre texte suivi de CTRL-D :\n");
-    int fs = open(0, O_RDONLY);
-/*     char buffer;
-    while (buffer!="ˆD"){
-        read(fs,buffer,bytesRead);
-    } */
-    // TODO
+
+    write(STDOUT_FILENO,"Saisissez votre texte suivi de CTRL-D :\n", 40);
+
+    char buffer;
+    ssize_t bytesRead;
+
+    while ((bytesRead = read(STDIN_FILENO, &buffer, 1)) > 0) {
+        write(fd, &buffer, 1);
+    }
+   
+    close(fd);
+
     return 0;
 }
