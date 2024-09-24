@@ -24,7 +24,7 @@ int main () {
     char buffer;
     ssize_t bytesRead;
 
-    while ((bytesRead = read(STDIN_FILENO, &buffer, 1)) > 0) {
+    while ((read(STDIN_FILENO, &buffer, 1)) != 0) {  // car CTRL-D retourne la valeur 0
         write(fd, &buffer, 1);
     }
    
