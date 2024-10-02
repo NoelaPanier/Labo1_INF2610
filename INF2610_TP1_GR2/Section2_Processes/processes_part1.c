@@ -57,8 +57,7 @@ void question1()
         while(wait(NULL)>0);
         _exit(0); 
     }
-    //while(wait(NULL)>0);
-    _exit(0);
+    while(wait(NULL)>0);
     printProcRegistrations();
     execl("/bin/ls", "ls","-l", NULL);
 }
