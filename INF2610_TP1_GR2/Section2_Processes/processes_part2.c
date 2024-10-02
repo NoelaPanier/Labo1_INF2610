@@ -21,15 +21,44 @@ long somme[nb];
 // fonction exécutée par chaque thread créé
 void* contribution(void*p)
 {
-    // TODO
+   int no = *((int*)p);
+   int intervalle1 = (no * (m/nb)) + 1;
+   int intervalle2 = (no+1) *(m/nb);
 
+  for(int i=intervalle1;i<=intervalle2;i++){
+    somme[no]+=i;
+  }
+    
   return NULL;
 }
 
 
 void question2( )
 {
-    // TODO
+  pthread_t *tid = malloc (nb * sizeof(pthread_t));
+
+  int num[nb];
+  for(int i=0; i<nb; i++){
+    num[i] = i;
+  }
+
+  long somme_contribution = 0;
+  long vrai_somme = 0;
+
+  for(int i=0; i<nb; i++){
+    pthread_create(&tid[i], NULL, contribution, (void*) &num[i]);
+  }
+
+  for(int i=0; i<nb; i++){
+    pthread_join(tid[i], NULL);
+  }
+
+  for(int i=0; i<nb; i++){
+    somme_contribution += somme[i];
+  }
+
+  vrai_somme = (long)m * ((long)m + 1)/2;
+  printf("somme contribution: %ld, vrai somme: %ld \n", somme_contribution, vrai_somme);
     
 }
 
