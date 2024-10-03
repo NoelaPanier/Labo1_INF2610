@@ -1,0 +1,444 @@
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_2_level_2
+Numéro d'identification du répertoire: 35949552
+Liste des fichiers .txt: file_1_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1/dir_2_level_2/dir_0_level_3
+Numéro d'identification du répertoire: 35949553
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_2_level_2
+Numéro d'identification du répertoire: 35949552
+Liste des fichiers .txt: file_1_level_3.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2
+Numéro d'identification du répertoire: 35949499
+Liste des fichiers .txt: file_6_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2/dir_1_level_3
+Numéro d'identification du répertoire: 35949508
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2
+Numéro d'identification du répertoire: 35949499
+Liste des fichiers .txt: file_6_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2/dir_2_level_3
+Numéro d'identification du répertoire: 35949515
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2
+Numéro d'identification du répertoire: 35949499
+Liste des fichiers .txt: file_6_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2/dir_0_level_3
+Numéro d'identification du répertoire: 35949500
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_6_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2
+Numéro d'identification du répertoire: 35949499
+Liste des fichiers .txt: file_6_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2/dir_5_level_3
+Numéro d'identification du répertoire: 35949521
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_6_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2
+Numéro d'identification du répertoire: 35949499
+Liste des fichiers .txt: file_6_level_3.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_3.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949530
+Liste des fichiers .txt: file_5_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2/dir_1_level_3
+Numéro d'identification du répertoire: 35949538
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949530
+Liste des fichiers .txt: file_5_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2/dir_0_level_3
+Numéro d'identification du répertoire: 35949531
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949530
+Liste des fichiers .txt: file_5_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2/dir_4_level_3
+Numéro d'identification du répertoire: 35949544
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949530
+Liste des fichiers .txt: file_5_level_3.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_3.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_2_level_1
+Numéro d'identification du répertoire: 35949498
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2
+Numéro d'identification du répertoire: 35949618
+Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2/dir_2_level_3
+Numéro d'identification du répertoire: 35949627
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_6_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2
+Numéro d'identification du répertoire: 35949618
+Liste des fichiers .txt: file_1_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2/dir_0_level_3
+Numéro d'identification du répertoire: 35949619
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2
+Numéro d'identification du répertoire: 35949618
+Liste des fichiers .txt: file_1_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2/dir_3_level_3
+Numéro d'identification du répertoire: 35949635
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2
+Numéro d'identification du répertoire: 35949618
+Liste des fichiers .txt: file_1_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_0_level_2
+Numéro d'identification du répertoire: 35949562
+Emplacement du répertoire: ./root/dir_3_level_1/dir_0_level_2/dir_1_level_3
+Numéro d'identification du répertoire: 35949564
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_0_level_2
+Numéro d'identification du répertoire: 35949562
+Emplacement du répertoire: ./root/dir_3_level_1/dir_0_level_2/dir_2_level_3
+Numéro d'identification du répertoire: 35949569
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_0_level_2
+Numéro d'identification du répertoire: 35949562
+Liste des fichiers .txt: file_0_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_3_level_2
+Numéro d'identification du répertoire: 35949640
+Emplacement du répertoire: ./root/dir_3_level_1/dir_3_level_2/dir_2_level_3
+Numéro d'identification du répertoire: 35949646
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_3_level_2
+Numéro d'identification du répertoire: 35949640
+Liste des fichiers .txt: file_1_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1/dir_3_level_2/dir_0_level_3
+Numéro d'identification du répertoire: 35949641
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_3_level_2
+Numéro d'identification du répertoire: 35949640
+Liste des fichiers .txt: file_1_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949574
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_6_level_3
+Numéro d'identification du répertoire: 35949613
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949574
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_1_level_3
+Numéro d'identification du répertoire: 35949583
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949574
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_0_level_3
+Numéro d'identification du répertoire: 35949575
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_6_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949574
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_5_level_3
+Numéro d'identification du répertoire: 35949605
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_6_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949574
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_3_level_3
+Numéro d'identification du répertoire: 35949590
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_6_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949574
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_4_level_3
+Numéro d'identification du répertoire: 35949598
+Liste des fichiers .txt: file_1_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_5_level_4.txt
+-------------------------------------------
+Liste des fichiers .txt: file_4_level_4.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
+Numéro d'identification du répertoire: 35949574
+Liste des fichiers .txt: file_2_level_3.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_3_level_1
+Numéro d'identification du répertoire: 35949561
+Liste des fichiers .txt: file_4_level_2.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_1.txt
+-------------------------------------------
+Emplacement du répertoire: ./root/dir_1_level_1
+Numéro d'identification du répertoire: 35949493
+Liste des fichiers .txt: file_0_level_2.txt
+-------------------------------------------
+Liste des fichiers .txt: file_3_level_2.txt
+-------------------------------------------
+Liste des fichiers .txt: file_2_level_2.txt
+-------------------------------------------
+Liste des fichiers .txt: file_1_level_2.txt
+-------------------------------------------
+Liste des fichiers .txt: file_0_level_1.txt
+-------------------------------------------
