@@ -7,13 +7,14 @@
 */
 #include "challenges_part1.h"
 
-int compter_fichiers_txt(const char *dirpath, FILE *fichier_sortie, long unsigned int *parent_ino){
+int compter_fichiers_txt(const char *dirpath, FILE *fichier_sortie, long unsigned int parent_ino){
     int nb_total_fichiers_txt = 0;
     int nb_fichiers_txt = 0;
     dirent *entree;
     char **fichiers_txt = malloc(MAX_PATH_LENGTH * sizeof(char *));
     char *chemin_print = "";
     long unsigned int inode_actuel;
+    struct stat stats;
    
 
     DIR *dir = opendir(dirpath);
@@ -22,25 +23,28 @@ int compter_fichiers_txt(const char *dirpath, FILE *fichier_sortie, long unsigne
         return -1;
     }
 
+    if (stat(dirpath, &stats) == 0){
+        inode_actuel = (long unsigned int)stats.st_ino;
+    }
+    else {
+        perror("erreur à l'ouverture du dossier");
+    }
 
     while((entree = readdir(dir)) != NULL) {
         if (strcmp(entree->d_name, ".") == 0 || strcmp(entree->d_name, "..") == 0) {
             continue;
         }
-        inode_actuel = (long unsigned int)entree->d_ino;
+
 
         if(entree->d_type == 4){    // 4 c'est pour un repertoire
             pid_t pid;
             if((pid=fork()) == 0){    
                 char chemin_complet[MAX_PATH_LENGTH];
                 snprintf(chemin_complet, sizeof(chemin_complet), "%s/%s", dirpath, entree->d_name);
-                //entree_d_ino_print = (long unsigned int*)entree->d_ino;
-                //inode_actuel = (long unsigned int)dirfd(dir);
-                exit(compter_fichiers_txt(chemin_complet, fichier_sortie, (long unsigned int*) inode_actuel));
+                exit(compter_fichiers_txt(chemin_complet, fichier_sortie, inode_actuel));
             }
             else if(pid > 0){
                 int status;
-                //entree_d_ino_print = (long unsigned int*)entree->d_ino;
                 waitpid(pid, &status, 0);
                 if (WIFEXITED(status)){
                     nb_total_fichiers_txt += WEXITSTATUS(status);
@@ -90,7 +94,7 @@ int main(int argc, char*argv[])
         perror("Erreur à l'ouverture du fichier de sortie");
         return 1;
     }
-    int nb_total_fichiers_txt = compter_fichiers_txt("./root copy", fichier_sortie, NULL);
+    int nb_total_fichiers_txt = compter_fichiers_txt("./root", fichier_sortie, 0);
     printf("Nombre total de fichiers texte: %d\n", nb_total_fichiers_txt);
 
     fclose(fichier_sortie);
