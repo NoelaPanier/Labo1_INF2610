@@ -9,7 +9,9 @@
 
 int compter_fichiers_txt(const char *dirpath, FILE *fichier_sortie, long unsigned int *parent_ino){
     int nb_total_fichiers_txt = 0;
+    int nb_fichiers_txt = 0;
     dirent *entree;
+    char **fichiers_txt = malloc(MAX_PATH_LENGTH * sizeof(char *));
 
     DIR *dir = opendir(dirpath);
     if( dir == NULL){
@@ -28,6 +30,7 @@ int compter_fichiers_txt(const char *dirpath, FILE *fichier_sortie, long unsigne
                 char chemin_complet[MAX_PATH_LENGTH];
                 snprintf(chemin_complet, sizeof(chemin_complet), "%s/%s", dirpath, entree->d_name);
 
+                fprintf(fichier_sortie, "-----------------------------------------------------------------\n");
                 fprintf(fichier_sortie, "Emplacement du répertoire: %s\n", chemin_complet);
                 fprintf(fichier_sortie, "Numéro d'identification du répertoire: %llu\n", (unsigned long long) entree->d_ino);
                 fprintf(fichier_sortie, "Numéro d'identification du répertoire supérieur immédiat: %llu\n", (unsigned long long)parent_ino);
@@ -40,17 +43,33 @@ int compter_fichiers_txt(const char *dirpath, FILE *fichier_sortie, long unsigne
                 waitpid(pid, &status, 0);
                 if (WIFEXITED(status)){
                     nb_total_fichiers_txt += WEXITSTATUS(status);
-                    fprintf(fichier_sortie, "-------------------------------------------\n");
+                    fprintf(fichier_sortie, "process parent\n");
                 }
             }
         }
         else if(entree->d_type == 8){ // 8 c'est pour un fichier
             if (strstr(entree->d_name, ".txt") != NULL) {
-                fprintf(fichier_sortie, "Liste des fichiers .txt: %s\n", entree->d_name);
+                fichiers_txt[nb_fichiers_txt] = malloc(strlen(entree->d_name) + 1);
+                strcpy(fichiers_txt[nb_fichiers_txt], entree->d_name);
+                nb_fichiers_txt++;
+
+                //fprintf(fichier_sortie, "Liste des fichiers .txt: %s\n", entree->d_name);
                 nb_total_fichiers_txt++;
             }
         }
     }
+
+    fprintf(fichier_sortie, "Liste des fichiers texte: \n");
+    if (nb_fichiers_txt == 0) {
+        fprintf(fichier_sortie, "Ce repertoire ne contient aucun fichier texte. \n");
+    } else {
+        for (int i = 0; i < nb_fichiers_txt; i++) {
+            fprintf(fichier_sortie, "%s\n", fichiers_txt[i]);
+            free(fichiers_txt[i]); 
+        }
+    }
+
+    free(fichiers_txt); 
 
     closedir(dir);
     return nb_total_fichiers_txt;
