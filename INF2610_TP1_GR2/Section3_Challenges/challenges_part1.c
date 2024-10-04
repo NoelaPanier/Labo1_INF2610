@@ -12,6 +12,8 @@ int compter_fichiers_txt(const char *dirpath, FILE *fichier_sortie, long unsigne
     int nb_fichiers_txt = 0;
     dirent *entree;
     char **fichiers_txt = malloc(MAX_PATH_LENGTH * sizeof(char *));
+    char *chemin_print = "";
+    static long unsigned int *entree_d_ino_print = 0;
 
     DIR *dir = opendir(dirpath);
     if( dir == NULL){
@@ -25,26 +27,20 @@ int compter_fichiers_txt(const char *dirpath, FILE *fichier_sortie, long unsigne
         }
 
         if(entree->d_type == 4){    // 4 c'est pour un repertoire
-            fprintf(fichier_sortie, "%i\n", getpid());
             pid_t pid;
-            if((pid=fork()) == 0){    // processus enfant
+            if((pid=fork()) == 0){    
                 char chemin_complet[MAX_PATH_LENGTH];
                 snprintf(chemin_complet, sizeof(chemin_complet), "%s/%s", dirpath, entree->d_name);
-
-                fprintf(fichier_sortie, "-----------------------------------------------------------------\n");
-                fprintf(fichier_sortie, "Emplacement du répertoire: %s\n", chemin_complet);
-                fprintf(fichier_sortie, "Numéro d'identification du répertoire: %llu\n", (unsigned long long) entree->d_ino);
-                fprintf(fichier_sortie, "Numéro d'identification du répertoire supérieur immédiat: %llu\n", (unsigned long long)parent_ino);
-                fprintf(fichier_sortie, "-----------------------------------------------------------------\n");
+                entree_d_ino_print = (long unsigned int*)entree->d_ino;
 
                 exit(compter_fichiers_txt(chemin_complet, fichier_sortie, (long unsigned int*) entree->d_ino));
             }
             else if(pid > 0){
                 int status;
+                entree_d_ino_print = (long unsigned int*)entree->d_ino;
                 waitpid(pid, &status, 0);
                 if (WIFEXITED(status)){
                     nb_total_fichiers_txt += WEXITSTATUS(status);
-                    fprintf(fichier_sortie, "process parent: %llu\n", (unsigned long long) entree->d_ino);
                 }
             }
         }
@@ -53,13 +49,18 @@ int compter_fichiers_txt(const char *dirpath, FILE *fichier_sortie, long unsigne
                 fichiers_txt[nb_fichiers_txt] = malloc(strlen(entree->d_name) + 1);
                 strcpy(fichiers_txt[nb_fichiers_txt], entree->d_name);
                 nb_fichiers_txt++;
-
-                //fprintf(fichier_sortie, "Liste des fichiers .txt: %s\n", entree->d_name);
                 nb_total_fichiers_txt++;
             }
         }
     }
 
+   
+    char chemin_complet[MAX_PATH_LENGTH];
+    snprintf(chemin_complet, sizeof(chemin_complet), "%s", dirpath);
+    fprintf(fichier_sortie, "-----------------------------------------------------------------\n");
+    fprintf(fichier_sortie, "Emplacement du répertoire: %s\n", chemin_complet);
+    fprintf(fichier_sortie, "Numéro d'identification du répertoire: %llu\n",(unsigned long long)entree_d_ino_print);
+    fprintf(fichier_sortie, "Numéro d'identification du répertoire supérieur immédiat: %llu\n", (unsigned long long)parent_ino);
     fprintf(fichier_sortie, "Liste des fichiers texte: \n");
     if (nb_fichiers_txt == 0) {
         fprintf(fichier_sortie, "Ce repertoire ne contient aucun fichier texte. \n");
@@ -67,6 +68,7 @@ int compter_fichiers_txt(const char *dirpath, FILE *fichier_sortie, long unsigne
         for (int i = 0; i < nb_fichiers_txt; i++) {
             fprintf(fichier_sortie, "%s\n", fichiers_txt[i]);
             free(fichiers_txt[i]); 
+
         }
     }
 
@@ -85,7 +87,7 @@ int main(int argc, char*argv[])
         perror("Erreur à l'ouverture du fichier de sortie");
         return 1;
     }
-    int nb_total_fichiers_txt = compter_fichiers_txt("./root copy", fichier_sortie, NULL);
+    int nb_total_fichiers_txt = compter_fichiers_txt("./root", fichier_sortie, NULL);
     printf("Nombre total de fichiers texte: %d\n", nb_total_fichiers_txt);
 
     fclose(fichier_sortie);
