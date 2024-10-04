@@ -1,12 +1,4 @@
 -----------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1/dir_2_level_2
-Numéro d'identification du répertoire: 35949552
-Numéro d'identification du répertoire supérieur immédiat: 35949498
------------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_2_level_2/dir_0_level_3
 Numéro d'identification du répertoire: 35949553
 Numéro d'identification du répertoire supérieur immédiat: 35949552
@@ -17,26 +9,12 @@ file_0_level_4.txt
 file_3_level_4.txt
 file_4_level_4.txt
 -----------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
------------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_2_level_2
 Numéro d'identification du répertoire: 35949552
 Numéro d'identification du répertoire supérieur immédiat: 35949498
-process parent
 Liste des fichiers texte: 
 file_1_level_3.txt
 file_2_level_3.txt
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2
-Numéro d'identification du répertoire: 35949499
-Numéro d'identification du répertoire supérieur immédiat: 35949498
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2/dir_1_level_3
 Numéro d'identification du répertoire: 35949508
@@ -49,16 +27,6 @@ file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
 -----------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2
-Numéro d'identification du répertoire: 35949499
-Numéro d'identification du répertoire supérieur immédiat: 35949498
-process parent
------------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2/dir_2_level_3
 Numéro d'identification du répertoire: 35949515
 Numéro d'identification du répertoire supérieur immédiat: 35949499
@@ -66,17 +34,6 @@ Liste des fichiers texte:
 file_1_level_4.txt
 file_2_level_4.txt
 file_0_level_4.txt
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2
-Numéro d'identification du répertoire: 35949499
-Numéro d'identification du répertoire supérieur immédiat: 35949498
-process parent
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2/dir_0_level_3
 Numéro d'identification du répertoire: 35949500
@@ -90,18 +47,6 @@ file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
 -----------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2
-Numéro d'identification du répertoire: 35949499
-Numéro d'identification du répertoire supérieur immédiat: 35949498
-process parent
-process parent
-process parent
------------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2/dir_5_level_3
 Numéro d'identification du répertoire: 35949521
 Numéro d'identification du répertoire supérieur immédiat: 35949499
@@ -114,32 +59,13 @@ file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
 -----------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
------------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_0_level_2
 Numéro d'identification du répertoire: 35949499
 Numéro d'identification du répertoire supérieur immédiat: 35949498
-process parent
-process parent
-process parent
-process parent
 Liste des fichiers texte: 
 file_6_level_3.txt
 file_4_level_3.txt
 file_3_level_3.txt
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2
-Numéro d'identification du répertoire: 35949530
-Numéro d'identification du répertoire supérieur immédiat: 35949498
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2/dir_1_level_3
 Numéro d'identification du répertoire: 35949538
@@ -148,17 +74,6 @@ Liste des fichiers texte:
 file_1_level_4.txt
 file_2_level_4.txt
 file_0_level_4.txt
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2
-Numéro d'identification du répertoire: 35949530
-Numéro d'identification du répertoire supérieur immédiat: 35949498
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2/dir_0_level_3
 Numéro d'identification du répertoire: 35949531
@@ -171,18 +86,6 @@ file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
 -----------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2
-Numéro d'identification du répertoire: 35949530
-Numéro d'identification du répertoire supérieur immédiat: 35949498
-process parent
-process parent
------------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2/dir_4_level_3
 Numéro d'identification du répertoire: 35949544
 Numéro d'identification du répertoire supérieur immédiat: 35949530
@@ -194,18 +97,9 @@ file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
 -----------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_2_level_1
-Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
------------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1/dir_1_level_2
 Numéro d'identification du répertoire: 35949530
 Numéro d'identification du répertoire supérieur immédiat: 35949498
-process parent
-process parent
-process parent
 Liste des fichiers texte: 
 file_5_level_3.txt
 file_2_level_3.txt
@@ -213,21 +107,9 @@ file_3_level_3.txt
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_2_level_1
 Numéro d'identification du répertoire: 35949498
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
-process parent
+Numéro d'identification du répertoire supérieur immédiat: 35949491
 Liste des fichiers texte: 
 Ce repertoire ne contient aucun fichier texte. 
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2
-Numéro d'identification du répertoire: 35949618
-Numéro d'identification du répertoire supérieur immédiat: 35949561
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2/dir_2_level_3
 Numéro d'identification du répertoire: 35949627
@@ -240,16 +122,6 @@ file_6_level_4.txt
 file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2
-Numéro d'identification du répertoire: 35949618
-Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2/dir_0_level_3
 Numéro d'identification du répertoire: 35949619
@@ -261,17 +133,6 @@ file_0_level_4.txt
 file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2
-Numéro d'identification du répertoire: 35949618
-Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2/dir_3_level_3
 Numéro d'identification du répertoire: 35949635
@@ -281,30 +142,12 @@ file_1_level_4.txt
 file_2_level_4.txt
 file_0_level_4.txt
 file_3_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_2_level_2
 Numéro d'identification du répertoire: 35949618
 Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
-process parent
-process parent
 Liste des fichiers texte: 
 file_1_level_3.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_0_level_2
-Numéro d'identification du répertoire: 35949562
-Numéro d'identification du répertoire supérieur immédiat: 35949561
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_0_level_2/dir_1_level_3
 Numéro d'identification du répertoire: 35949564
@@ -314,17 +157,6 @@ file_1_level_4.txt
 file_2_level_4.txt
 file_0_level_4.txt
 file_3_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_0_level_2
-Numéro d'identification du répertoire: 35949562
-Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_0_level_2/dir_2_level_3
 Numéro d'identification du répertoire: 35949569
@@ -334,31 +166,12 @@ file_1_level_4.txt
 file_2_level_4.txt
 file_0_level_4.txt
 file_3_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_0_level_2
 Numéro d'identification du répertoire: 35949562
 Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
-process parent
 Liste des fichiers texte: 
 file_0_level_3.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_3_level_2
-Numéro d'identification du répertoire: 35949640
-Numéro d'identification du répertoire supérieur immédiat: 35949561
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_3_level_2/dir_2_level_3
 Numéro d'identification du répertoire: 35949646
@@ -369,18 +182,6 @@ file_2_level_4.txt
 file_0_level_4.txt
 file_3_level_4.txt
 file_4_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_3_level_2
-Numéro d'identification du répertoire: 35949640
-Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_3_level_2/dir_0_level_3
 Numéro d'identification du répertoire: 35949641
@@ -389,33 +190,12 @@ Liste des fichiers texte:
 file_1_level_4.txt
 file_2_level_4.txt
 file_0_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_3_level_2
 Numéro d'identification du répertoire: 35949640
 Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
-process parent
 Liste des fichiers texte: 
 file_1_level_3.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
-Numéro d'identification du répertoire: 35949574
-Numéro d'identification du répertoire supérieur immédiat: 35949561
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_6_level_3
 Numéro d'identification du répertoire: 35949613
@@ -425,19 +205,6 @@ file_1_level_4.txt
 file_2_level_4.txt
 file_0_level_4.txt
 file_3_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
-Numéro d'identification du répertoire: 35949574
-Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_1_level_3
 Numéro d'identification du répertoire: 35949583
@@ -448,20 +215,6 @@ file_2_level_4.txt
 file_0_level_4.txt
 file_3_level_4.txt
 file_4_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
-Numéro d'identification du répertoire: 35949574
-Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_0_level_3
 Numéro d'identification du répertoire: 35949575
@@ -474,21 +227,6 @@ file_6_level_4.txt
 file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
-Numéro d'identification du répertoire: 35949574
-Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
-process parent
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_5_level_3
 Numéro d'identification du répertoire: 35949605
@@ -501,22 +239,6 @@ file_6_level_4.txt
 file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
-Numéro d'identification du répertoire: 35949574
-Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
-process parent
-process parent
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_3_level_3
 Numéro d'identification du répertoire: 35949590
@@ -529,23 +251,6 @@ file_6_level_4.txt
 file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
-Numéro d'identification du répertoire: 35949574
-Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
-process parent
-process parent
-process parent
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2/dir_4_level_3
 Numéro d'identification du répertoire: 35949598
@@ -557,50 +262,30 @@ file_0_level_4.txt
 file_3_level_4.txt
 file_5_level_4.txt
 file_4_level_4.txt
-process parent
------------------------------------------------------------------
-Emplacement du répertoire: ./root/dir_3_level_1
-Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1/dir_1_level_2
 Numéro d'identification du répertoire: 35949574
 Numéro d'identification du répertoire supérieur immédiat: 35949561
-process parent
-process parent
-process parent
-process parent
-process parent
-process parent
 Liste des fichiers texte: 
 file_2_level_3.txt
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_3_level_1
 Numéro d'identification du répertoire: 35949561
-Numéro d'identification du répertoire supérieur immédiat: 0
-process parent
-process parent
-process parent
-process parent
+Numéro d'identification du répertoire supérieur immédiat: 35949491
 Liste des fichiers texte: 
 file_4_level_2.txt
-process parent
-process parent
 -----------------------------------------------------------------
 Emplacement du répertoire: ./root/dir_1_level_1
 Numéro d'identification du répertoire: 35949493
-Numéro d'identification du répertoire supérieur immédiat: 0
+Numéro d'identification du répertoire supérieur immédiat: 35949491
 Liste des fichiers texte: 
 file_0_level_2.txt
 file_3_level_2.txt
 file_2_level_2.txt
 file_1_level_2.txt
-process parent
-process parent
-process parent
+-----------------------------------------------------------------
+Emplacement du répertoire: ./root
+Numéro d'identification du répertoire: 35949491
+Numéro d'identification du répertoire supérieur immédiat: 0
 Liste des fichiers texte: 
 file_0_level_1.txt
