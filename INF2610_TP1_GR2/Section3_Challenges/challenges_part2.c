@@ -7,6 +7,32 @@
 */
 #include "challenges_part2.h"
 
+typedef struct {
+    Matrix* A;
+    Matrix* B;
+    Matrix* result;
+    int row;
+} ThreadData;
+
+// Thread function to perform matrix multiplication for a row
+void* multiply_thread(void* arg) {
+    ThreadData* data = (ThreadData*) arg;
+    Matrix* A = data->A;
+    Matrix* B = data->B;
+    Matrix* result = data->result;
+    int row = data->row;
+
+    // Perform matrix multiplication for the row
+        for (int j = 0; j < B->cols; j++) {
+            result->matrix[row][j] = 0;  // Initialize result element
+            for (int k = 0; k < A->cols; k++) {
+                result->matrix[row][j] += A->matrix[row][k] * B->matrix[k][j];
+            }
+        }
+
+    pthread_exit(NULL);
+}
+
 Matrix* multiply(Matrix* A, Matrix* B) {
     if (A == NULL || B == NULL) {
         return NULL;
@@ -43,14 +69,19 @@ Matrix* multiply(Matrix* A, Matrix* B) {
             return NULL; // Failed to allocate memory for columns
         }
     }
+    // Create and initialize thread data
+    pthread_t threads[A->rows];
+    ThreadData thread_data[A->rows];
 
     for (int i=0;i<A->rows;i++){
-        for (int j=0;j<B->cols;j++){
-            result->matrix[i][j]=0;
-            for (int k=0;k<B->rows;k++){
-                result->matrix[i][j]+=A->matrix[i][k]*B->matrix[k][j];
-            }    
-        }
+        thread_data[i].A = A;
+        thread_data[i].B = B;
+        thread_data[i].result = result;
+        thread_data[i].row = i;
+        pthread_create(&threads[i], NULL, multiply_thread, (void*)&thread_data[i]);
+    }
+    for (int i = 0; i < A->rows; i++) {
+        pthread_join(threads[i], NULL);
     }
     return result;
 }
