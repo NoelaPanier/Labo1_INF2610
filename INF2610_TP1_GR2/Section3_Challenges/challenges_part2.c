@@ -3,7 +3,7 @@
  * Automne 2024
  * Challenges - part2.c
  *
- * Ajoutez vos noms, prénoms et matricules
+ * Noëla Panier 2197449, Thomas Tzeng Souvanlasy 2214055
 */
 #include "challenges_part2.h"
 
