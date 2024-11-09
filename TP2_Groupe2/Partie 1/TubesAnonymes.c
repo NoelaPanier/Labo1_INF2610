@@ -13,6 +13,8 @@ int main() {
 
     // Fork pour le premier processus (rev < In.txt)
     if(fork() == 0){
+        close(fd2[0]); // Fermer les fd non utilises
+        close(fd2[1]);
         printf("Processus 1: Inverser le contenu de In.txt avec rev\n");
         int file = open("In.txt", O_RDONLY);
         if (file == -1) {
@@ -47,6 +49,8 @@ int main() {
 
     // Fork pour le troisiÃ¨me processus (diff)
     if(fork() == 0){
+        close(fd1[0]); // Fermer les fd non utilises
+        close(fd1[1]);
         printf("Processus 3: Comparer les fichiers avec diff\n");
         close(fd2[1]);  // Fermer l'extrÃ©mitÃ© d'Ã©criture du second pipe
         dup2(fd2[0], 0); // Rediriger l'entrÃ©e standard vers fd2[0]
@@ -70,6 +74,7 @@ int main() {
     close(fd1[1]);
     close(fd2[0]);
     close(fd2[1]);
+    close(1);
 
     // Attendre la fin de tous les processus fils
     while (wait(NULL) > 0);
