@@ -5,7 +5,7 @@ int main(int argc, char *argv[]) {
         fprintf(stderr, "Usage: %s <array_size> <num_processes>\n", argv[0]);
         exit(1);
     }
-    
+    int array_size = atoi(argv[1]);
     /* Populate the array to test the sort */
     srand(time(NULL));
     for (int i = 0; i < array_size; i++) {

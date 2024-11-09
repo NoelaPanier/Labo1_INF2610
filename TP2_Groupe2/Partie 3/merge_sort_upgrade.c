@@ -6,13 +6,64 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
     
+    int array_size = atoi(argv[1]);
+    int num_processes = atoi(argv[2]);
+    size_t total_size = sizeof(SharedData) + array_size * sizeof(int);
+
+    // Create shared memory object
+    fd = shm_open("/merge_sort_shm", O_CREAT | O_RDWR, 0666);
+    shared_data = mmap(NULL, total_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+
+    // Initialize shared data
+    shared_data->size = array_size;
+    shared_data->array = (int*)(shared_data + 1);
+
+    // Create and initialize semaphore
+    mutex = sem_open(SEM_NAME, O_CREAT, 0644, 1);
+
     /* Populate the array to test the sort */
     srand(time(NULL));
     for (int i = 0; i < array_size; i++) {
         shared_data->array[i] = rand() % MAX_NUM_SIZE;
     }
 
+    execute_merge_sort(0, shared_data->size - 1, num_processes);
+    show_array();
     return 0;
+}
+
+void execute_merge_sort(int start, int end, int num_processes) {
+    if (num_processes <= 1 || start < end ) {
+        // If only one process is left or the range is small
+        merge_sort(start, end);
+        return;
+    }
+
+    int mid = start + (end - start) / 2;
+    pid_t left_pid, right_pid;
+
+    left_pid = fork();
+    if (left_pid == 0) {
+        // Child process to handle the left part
+        execute_merge_sort(start, mid, num_processes / 2);
+        exit(0);
+    }
+
+    right_pid = fork();
+    if (right_pid == 0) {
+        // Child process to handle the right part
+        execute_merge_sort(mid + 1, end, num_processes / 2);
+        exit(0);
+    }
+
+    // Parent process waits for both children to finish
+    waitpid(left_pid, NULL, 0);
+    waitpid(right_pid, NULL, 0);
+
+    // Synchronize before merging
+    sem_wait(mutex);
+    merge(start, mid, end);
+    sem_post(mutex);
 }
 
 void merge_sort( int left, int right) {
