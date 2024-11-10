@@ -8,12 +8,12 @@ int main(int argc, char *argv[]) {
     
     int array_size = atoi(argv[1]);
     int num_processes = atoi(argv[2]);
-    size_t total_size = sizeof(SharedData) + array_size * sizeof(int);
+    //size_t total_size = sizeof(SharedData) + array_size * sizeof(int);
 
     // Create shared memory object
     fd = shm_open("/merge_sort_shm", O_CREAT | O_RDWR, 0666);
-    ftruncate(fd, total_size);
-    shared_data = mmap(NULL, total_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+    ftruncate(fd, array_size);
+    shared_data = mmap(NULL,array_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
     // Initialize shared data
     shared_data->size = array_size;

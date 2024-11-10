@@ -1,0 +1,11 @@
+
+Tri avec 4 nombres et 1 processus:
+Start = 0, End = 1, sorted = [156384, 540367]
+Start = 2, End = 3, sorted = [284373, 655708]
+Start = 0, End = 3, sorted = [156384, 284373, 540367, 655708]
+Temps d'execution du tri: 0.009680 
+Tri avec 4 nombres et 1 processus:
+Start = 0, End = 1, sorted = [199027, 268685]
+Start = 2, End = 3, sorted = [699956, 975367]
+Start = 0, End = 3, sorted = [199027, 268685, 699956, 975367]
+Temps d'execution du tri: 0.012313 
