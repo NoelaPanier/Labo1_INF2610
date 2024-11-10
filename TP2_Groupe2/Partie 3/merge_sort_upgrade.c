@@ -12,6 +12,7 @@ int main(int argc, char *argv[]) {
 
     // Create shared memory object
     fd = shm_open("/merge_sort_shm", O_CREAT | O_RDWR, 0666);
+    ftruncate(fd, total_size);
     shared_data = mmap(NULL, total_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
     // Initialize shared data
