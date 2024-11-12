@@ -8,35 +8,51 @@ int main(int argc, char *argv[]) {
     
     int array_size = atoi(argv[1]);
     int num_processes = atoi(argv[2]);
-    //size_t total_size = sizeof(SharedData) + array_size * sizeof(int);
+    size_t total_size = sizeof(SharedData) + array_size * sizeof(int);
 
     // Create shared memory object
     fd = shm_open("/merge_sort_shm", O_CREAT | O_RDWR, 0666);
-    ftruncate(fd, array_size);
-    shared_data = mmap(NULL,array_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+    ftruncate(fd, total_size);
+    shared_data = mmap(NULL,total_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
     // Initialize shared data
     shared_data->size = array_size;
     shared_data->array = (int*)(shared_data + 1);
 
-    // Create and initialize semaphore
     mutex = sem_open(SEM_NAME, O_CREAT, 0644, 1);
 
     /* Populate the array to test the sort */
     srand(time(NULL));
     for (int i = 0; i < array_size; i++) {
         shared_data->array[i] = rand() % MAX_NUM_SIZE;
+        //printf("%d\n",shared_data->array[i]);
     }
-
+   
+    gettimeofday(&start_time, NULL);
+    //int max_processes = sysconf(_SC_NPROCESSORS_ONLN);  // Nombre de processeurs disponibles
+    //int process_limit = (num_processes > max_processes) ? max_processes : num_processes;
     execute_merge_sort(0, shared_data->size - 1, num_processes);
-    show_array();
+    gettimeofday(&end_time, NULL);
+    long seconds = end_time.tv_sec - start_time.tv_sec;
+    long microseconds = end_time.tv_usec - start_time.tv_usec;
+    double elapsed = seconds + microseconds * 1e-6;
+    //FILE *log_file2= fopen("sorted_array.txt", "a");
+    //fprintf(log_file2,"Temps d'execution du tri: %f  secondes\n", elapsed);
+    //fclose(log_file2);
+    //show_array();
+    printf("%f\n", elapsed);
+    munmap(shared_data, sizeof(total_size));
+    close(fd);
+    shm_unlink("/merge_sort_shm");
     return 0;
 }
 
+
 void execute_merge_sort(int start, int end, int num_processes) {
-    if (num_processes <= 1 || start < end ) {
+    if (num_processes <= 1 || start<end) {
         // If only one process is left or the range is small
         merge_sort(start, end);
+        // print_sort(start, end, shared_data->array);
         return;
     }
 
@@ -65,14 +81,33 @@ void execute_merge_sort(int start, int end, int num_processes) {
     sem_wait(mutex);
     merge(start, mid, end);
     sem_post(mutex);
+
+     //print_sort(start, end, shared_data->array);
 }
 
+void insertion_sort(int left, int right) {
+    for (int i = left + 1; i <= right; i++) {
+        int key = shared_data->array[i];
+        int j = i - 1;
+        while (j >= left && shared_data->array[j] > key) {
+            shared_data->array[j + 1] = shared_data->array[j];
+            j--;
+        }
+        shared_data->array[j + 1] = key;
+    }
+}
+
+
 void merge_sort( int left, int right) {
-    if (left < right) {
+    if (right-left <= 10) {
+        insertion_sort(left, right);
+        //print_sort(left, right, shared_data->array);
+    }else{
         int mid = left + (right - left) / 2;
         merge_sort(left, mid);
         merge_sort(mid + 1, right);
         merge(left, mid, right);
+
     }
 }
 

@@ -1,0 +1,53 @@
+Question 1: Merge-sort parallèle
+
+1. Cela ne va pas améliorer la performance et peut même la rendre pire. En effet, 
+lorsque l'on a plus de processus que de coeur, les bénéfices du calcul en parallèle
+pour les processus "en trop" sont perdus. Cela s'explique par le fait que pour que 
+le programme s'exécute en parallèle il faut avoir un processus par coeur. Dans le cas,
+où il y en a plus, il va y avoir de la concurrence et les processus devront se partager
+les ressources CPU.
+
+Question 2 : Journalisation
+
+1. Pour générer les résultats nous avons utilisé une taille de tableau de 1000 nombres.
+Aussi, à chaque N nous avons générer dix résultats différents et fait une moyenne pour le
+temps d'exécution, dans le but d'être représentatif de la réalité.
+
+N=1 (algorithme initial): Temps exécution = 3,801795 secondes
+N=4: Temps exécution = 3,801991 secondes
+N=8: Temps exécution = 3,808419 secondes
+N=16: Temps exécution = 3,94554 secondes
+
+2. Comparativement au programme initial (N=1), notre programme qui s'exécute en parallèle
+(N=4,N=8,N=16) a un temps d'exécution un petit peu plus lent. Il est d'environ 1,32% plus lent.
+
+3. Oui, ce résultat nous surprend. En effet, lorsqu'un programme s'exécute en parallèle, le 
+temps d'exécution est supposé prendre moins de temps, car plusieurs calcul s'effectue en même 
+temps. 
+
+4. Pour pouvoir répondre à cette question nous avons fait la même méthode que pour la question 1
+mais sans la journalisation.
+
+N=1 (algorithme initial): Temps exécution = 0,000282 secondes
+N=4: Temps exécution = 0,000281 secondes
+N=8: Temps exécution = 0,000276 secondes
+N=16: Temps exécution = 0,000270 secondes
+
+Donc, on peut constater que le programme est beaucoup plus rapide. En effet, si on calcul 
+la moyenne des résultats de ce numéro moins la moyenne des résultats du numéro 1, le tout
+divisé par la moyenne des résultat de ce numéro, cela nous donne que le programme avec journalisation
+est 99,99% moins performant que celui avec la journalisation.
+
+5. La première approche consiste à appeler l'algorithme "insertion sort" pour les petites tailles 
+de tableau. En effet, les appelles récursifs du merge sort sont coûteux, alors il est plus avantageux
+d'appeler insertion sort lorsque la division du tableau atteint une taille petite. La seconde approche
+consiste à remplacer les processus par des threads. En effet, les processus sont plus coûteux (gestion 
+et creation) que les threads qui partagent le même espace mémoire. 
+Dans notre cas nous avons implémenté la première approche (temps mesuré dans les mêmes conditions que précédemment):
+
+N=1 (algorithme initial): Temps exécution = 0,000201 secondes
+N=4: Temps exécution = 0,000212 secondes
+N=8: Temps exécution = 0,000201 secondes
+N=16: Temps exécution = 0,000200 secondes
+
+Donc, on peut constater que le programme avec le "insertion sort" est 74% plus performant que le premier programme.

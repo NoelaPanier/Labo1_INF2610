@@ -8,19 +8,17 @@
 #include <time.h>
 
 
-sem_t sem_occupe;// Indique le nombre d'éléments dans le tampon
-sem_t sem_libre;// Indique les espaces libres dans le tampon
-sem_t mutex;// Accès exclusif au tampon
+sem_t sem_occupe;   // Indique le nombre d'éléments dans le tampon
+sem_t sem_libre;    // Indique les espaces libres dans le tampon
+sem_t mutex;        // Accès exclusif au tampon
 
 int *tampon;
 int taille_tampon;
 int index_production = 0; 
 int index_consommation = 0; 
 
-int somme_produits = 0;
-int somme_consommés = 0;
 int total_produits = 0;
-int total_consommés = 0;
+int total_consommes = 0;
 
 bool flag_de_fin = false;
 
@@ -71,7 +69,7 @@ void* consommateur(void* cid) {
                 break; 
             }
         index_consommation = (index_consommation + 1) % taille_tampon;
-        total_consommés++;
+        total_consommes++;
 
         sem_post(&mutex);         
         sem_post(&sem_libre);          
@@ -140,7 +138,7 @@ int main(int argc, char* argv[]) {
     printf("Somme des chiffres produits: %d\n", somme_totale_produits);
     printf("Somme des chiffres consommés: %d\n", somme_totale_consommés);
     printf("Nombre de chiffres produits: %d\n", total_produits);
-    printf("Nombre de chiffres consommés: %d\n", total_consommés);
+    printf("Nombre de chiffres consommés: %d\n", total_consommes);
 
     free(tampon);
     sem_destroy(&sem_occupe);
