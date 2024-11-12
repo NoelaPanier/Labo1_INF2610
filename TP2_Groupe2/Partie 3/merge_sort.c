@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 
     // Journalisation
     FILE *log_file = fopen("sorted_array.txt", "w");
-    printf(log_file,"Tri avec %d nombres et %d processus:\n", array_size,num_processes);
+    fprintf(log_file,"Tri avec %d nombres et %d processus:\n", array_size,num_processes);
     fclose(log_file);
 
     // Creation semaphore
