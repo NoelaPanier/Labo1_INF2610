@@ -19,9 +19,19 @@ sem_t sem_critical;
 
 int flag = 0;
 
+// Question 1:
+// 1. Exclusion mutuelle: L'exclusion mutuelle est assurée par sem_critical qui agit comme un verrou afin de protéger les sections critiques. Cela correspond aux lignes 35 à 38 et 49 à 52.
+// 2. Detention et attente: Les producteurs attendent sem_initial et consommateur sem_busy. Cela est représenté par les lignes 34 et 48. Aussi, lorsqu'is accèdent à la section critique ils détiennent sem_critical. Cela est représenté par les lignes 35 et 49.
+// 3. Pas de requisition: Les sémaphores sont libérés uniquement par le thread qui l'avait. Les ressources sont non-préemptive. Cela est représenté aux lignes 38, 39 et 52,53.
+// 4. Attente circulaire: L'attente circulaire est représentée les lignes 34,35 et 48,49.
+
+// Question 2: Ce code représente le problème des producteurs/consommateurs.
+
+// Question 3: 
+
 void* producer(void* arg) {
     while (1) {
-        sem_wait(&sem_initial);
+        sem_wait(&sem_initial); 
         sem_wait(&sem_critical);
         buffer[ip] = rand() % 9 + 1;
         ip = (ip + 1) % BUFFER_SIZE;
@@ -76,8 +86,10 @@ int main() {
     }
 
     for(int i = 0; i < N_THREADS_2; i++){
+        sem_wait(&sem_critical);
         buffer[ip] = 0;
         ip = (ip + 1) % BUFFER_SIZE;
+        sem_post(&sem_critical);
     }
 
     for(int i = 0; i < N_THREADS_2; i++){
