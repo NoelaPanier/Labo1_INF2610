@@ -86,10 +86,10 @@ int main() {
     }
 
     for(int i = 0; i < N_THREADS_2; i++){
-        sem_wait(&sem_critical);
+        sem_wait(&sem_critical);  // ajout
         buffer[ip] = 0;
         ip = (ip + 1) % BUFFER_SIZE;
-        sem_post(&sem_critical);
+        sem_post(&sem_critical);  // ajout
     }
 
     for(int i = 0; i < N_THREADS_2; i++){
