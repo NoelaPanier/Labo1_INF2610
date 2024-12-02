@@ -16,15 +16,18 @@ sem_t sem_critical;
 // 3. Pas de requisition:
 // 4. Attente circulaire:
 
-// Question 2:
+// Question 2: Le code ne représente pas une situation commune vu dans le cours.
 
-// Question 3:
+// Question 3: L'ajout de la ligne 30, permet de libérer le sémaphore si key n'égale pas à ENTREY_CODE. En effet, cela permet
+// d'éviter l'attente circulaire, car sans cette ligne, dans le cas où le if est false pour tous les threads, le sémaphore 
+// ne sera jamais libéré.
 
 int try_lock(int key){
     if(key == ENTRY_CODE){
         printf("Door unlocked\n");
         return 1;
     }
+    sem_post(&sem_critical);  // ajout
     sleep(1);
     return 0;
 }

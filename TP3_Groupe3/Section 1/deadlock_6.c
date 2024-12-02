@@ -15,9 +15,10 @@ int flag = 0;
 // 3. Pas de requisition:
 // 4. Attente circulaire:
 
-// Question 2:
+// Question 2: Le code ne représente pas une situation commune vu dans le cours.
 
-// Question 3:
+// Question 3: La condition à la ligne 32 est impossible, donc flag ne pouvait jamais se mettre à 1. Alors, le programme ne 
+// s'arrêter jamais. Le fait d'enlever la ligne 32 permet d'éliminer (trouver quel condition ca elimine)
 
 void* function_that_does_something(void* arg) {
     while (1) {
@@ -28,8 +29,8 @@ void* function_that_does_something(void* arg) {
 }
 
 void changeFlag(){
-    if (rand() % 10 == 10)
-        flag = 1;
+    //if (rand() % 10 == 10)  on enlève cette condition car elle est impossible
+    flag = 1;
     printf("Signal called\n");
 }
 

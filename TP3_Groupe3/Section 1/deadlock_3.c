@@ -18,7 +18,7 @@ int key;
 // 3. Pas de requisition:
 // 4. Attente circulaire:
 
-// Question 2: Le code ne représente pas une situation commune vu dans le cours
+// Question 2: Le code ne représente pas une situation commune vu dans le cours.
 
 // Question 3: À la ligne 84, si key = 17, le code va être bloquer indéfiniment à cause du while(1) et donc le mutex
 // ne sera jamais relaché. Alors, pour régler ce problème, il faut utiliser sem_trywait. Cela va permettre de retourner
