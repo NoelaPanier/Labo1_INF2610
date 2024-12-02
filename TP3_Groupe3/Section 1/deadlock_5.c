@@ -10,6 +10,16 @@
 
 sem_t sem_critical;
 
+// Question 1:
+// 1. Exclusion mutuelle:
+// 2. Detention et attente:
+// 3. Pas de requisition:
+// 4. Attente circulaire:
+
+// Question 2:
+
+// Question 3:
+
 int try_lock(int key){
     if(key == ENTRY_CODE){
         printf("Door unlocked\n");

@@ -7,6 +7,18 @@
 
 pthread_mutex_t locks[NUM_THREADS];
 
+// Question 1:
+// 1. Exclusion mutuelle:
+// 2. Detention et attente:
+// 3. Pas de requisition:
+// 4. Attente circulaire:
+
+// Question 2: Ce code représente le problème des philosophes
+
+// Question 3: L'ajout du if else représente la 2eme solution au problème des philosophes vu dans le cours. En effet, 
+// la condition (left<right) permet d'enlever l'attente circulaire, car elle permet d'avoir un ordre fixe d'acquision des verrous.
+// Par exemple, cette condition empêche le cas où tous les threads prennent left en premier et cause un interbloquage.
+
 void* cons(void* arg) {
     int id = *(int*)arg;
     int rounds = 0;
@@ -15,10 +27,15 @@ void* cons(void* arg) {
         sleep(1);
         int left = id;
         int right = (id + 1) % NUM_THREADS;
-        
-        pthread_mutex_lock(&locks[left]);
-        sleep(1);
-        pthread_mutex_lock(&locks[right]);
+
+        if(left < right){                       // ajout
+            pthread_mutex_lock(&locks[left]);
+            pthread_mutex_lock(&locks[right]);
+        }                                       // ajout
+        else{                                   // ajout
+            pthread_mutex_lock(&locks[right]);  // ajout
+            pthread_mutex_lock(&locks[left]);   // ajout
+        }
 
         sleep(1);
         rounds++;

@@ -12,8 +12,21 @@ sem_t mutex;
 int flag = 0;
 int key;
 
+// Question 1:
+// 1. Exclusion mutuelle:
+// 2. Detention et attente:
+// 3. Pas de requisition:
+// 4. Attente circulaire:
+
+// Question 2: Le code ne représente pas une situation commune vu dans le cours
+
+// Question 3: À la ligne 84, si key = 17, le code va être bloquer indéfiniment à cause du while(1) et donc le mutex
+// ne sera jamais relaché. Alors, pour régler ce problème, il faut utiliser sem_trywait. Cela va permettre de retourner
+// un résultat même si le mutex n'est pas disponible et donc ça va empêcher la détention et attente en retournant une 
+// erreur sans bloquer l'exécution.
+
 void* is_this_a_deadlock(void * args) {
-    sem_wait(&mutex);
+    sem_trywait(&mutex);      // modification de sem_wait par sem_trywait
     int a = 0, b = 0, c = 0, d = 0;
     int i, j, k, m, n;
 

@@ -9,6 +9,16 @@
 
 int flag = 0;
 
+// Question 1:
+// 1. Exclusion mutuelle:
+// 2. Detention et attente:
+// 3. Pas de requisition:
+// 4. Attente circulaire:
+
+// Question 2:
+
+// Question 3:
+
 void* function_that_does_something(void* arg) {
     while (1) {
         if (flag)
