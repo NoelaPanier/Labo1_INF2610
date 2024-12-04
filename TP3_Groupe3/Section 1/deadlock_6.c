@@ -10,15 +10,15 @@
 int flag = 0;
 
 // Question 1:
-// 1. Exclusion mutuelle:
-// 2. Detention et attente:
-// 3. Pas de requisition:
-// 4. Attente circulaire:
+// 1. Exclusion mutuelle: Ne s'applique pas.
+// 2. Detention et attente: Ne s'applique pas.
+// 3. Pas de requisition: Ne s'applique pas.
+// 4. Attente circulaire: Ne s'applique pas.
 
 // Question 2: Le code ne représente pas une situation commune vu dans le cours.
 
 // Question 3: La condition à la ligne 32 est impossible, donc flag ne pouvait jamais se mettre à 1. Alors, le programme ne 
-// s'arrêter jamais. Le fait d'enlever la ligne 32 permet d'éliminer (trouver quel condition ca elimine)
+// s'arrêter jamais.
 
 void* function_that_does_something(void* arg) {
     while (1) {

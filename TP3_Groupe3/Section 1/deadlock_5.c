@@ -11,10 +11,10 @@
 sem_t sem_critical;
 
 // Question 1:
-// 1. Exclusion mutuelle:
-// 2. Detention et attente:
-// 3. Pas de requisition:
-// 4. Attente circulaire:
+// 1. Exclusion mutuelle: L'exclusion mutuelle est représentée par le sémaphore aux lignes 37-41.
+// 2. Detention et attente: Si key n'égale pas à ENTRY_CODE, le thread détiendra le sémaphore et attendra que key = ENTRY_CODE. Cela est représenté aux lignes 26 et 37.
+// 3. Pas de requisition: Le sémaphore est libéré par le processus qui le détenait. (ligne 41)
+// 4. Attente circulaire: Si try_lock retourne 0, alors le sémaphore ne vas jamais être libéré et les autres threads attendront que le sémaphore se libère. (lignes 39-40)
 
 // Question 2: Le code ne représente pas une situation commune vu dans le cours.
 

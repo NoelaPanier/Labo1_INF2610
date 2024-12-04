@@ -8,10 +8,10 @@
 pthread_mutex_t locks[NUM_THREADS];
 
 // Question 1:
-// 1. Exclusion mutuelle:
-// 2. Detention et attente:
-// 3. Pas de requisition:
-// 4. Attente circulaire:
+// 1. Exclusion mutuelle: L'exclusion mutuelle est représentée par les pthread_mutex aux lignes 32-43.
+// 2. Detention et attente: La detention et attente est représentée aux lignes 32 et 33, car il se peut que le philosophe détienne la fourchette de gauce et attend pour avoir celle de droite.
+// 3. Pas de requisition: Lorsqu'un philosophe détient une fourchette, elle ne peut être libérée que par lui-même. Cela peut se voir aux lignes 42 et 43.
+// 4. Attente circulaire: Si chaque philosophe prend sa fourchette de gauche et veut celle de droite, cela va créer une attente circulaire. On peut voir ça à la ligne 33.
 
 // Question 2: Ce code représente le problème des philosophes
 
