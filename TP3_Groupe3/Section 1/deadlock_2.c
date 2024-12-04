@@ -4,10 +4,10 @@
 #include <stdlib.h>
 
 // Question 1:
-// 1. Exclusion mutuelle: L'exclusion mutuelle est représentée aux lignes 
-// 2. Detention et attente: 
-// 3. Pas de requisition:
-// 4. Attente circulaire:
+// 1. Exclusion mutuelle: L'exclusion mutuelle est représentée a la ligne 25, car il peut juste avoir un processus qui ecrit a la fois. Aussi, il y a les lignes 28,35,36.
+// 2. Detention et attente: La detention et attente est représentée par la ligne 37, car le processus parent attend que ses enfants aient fini.
+// 3. Pas de requisition: Un processus qui detient un descripteur de fichier, comme fd[1] le libere lui meme avec close(fd[1]). On peut voir ca aux lignes 28,35,36,44,45.
+// 4. Attente circulaire: L'attente circulaire est représentée aux lignes 30 et 42.
 
 // Question 2: Ce code fait référence au problème des lecteurs/rédacteurs
 

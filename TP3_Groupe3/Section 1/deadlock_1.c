@@ -27,7 +27,7 @@ int flag = 0;
 
 // Question 2: Ce code représente le problème des producteurs/consommateurs.
 
-// Question 3: 
+// Question 3: L'ajout des lignes 89-90, 93-94 permettent l'exclusion mutuelle et enleve le probleme de l'attente circulaire en signalant au consommateur qu'il y a quelque chose dans le tampon a consommer.
 
 void* producer(void* arg) {
     while (1) {

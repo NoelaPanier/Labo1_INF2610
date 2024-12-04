@@ -13,10 +13,10 @@ int flag = 0;
 int key;
 
 // Question 1:
-// 1. Exclusion mutuelle:
-// 2. Detention et attente:
-// 3. Pas de requisition:
-// 4. Attente circulaire:
+// 1. Exclusion mutuelle: L'exclusion mutuelle est représentée par le mutex. On peut voir ca aux lignes 29 et 97.
+// 2. Detention et attente: La detention et attente est représentée a la ligne 84.
+// 3. Pas de requisition: Le mutex est libérée uniquement par le thread qui l'avait. On voit ça à la ligne 97.
+// 4. Attente circulaire: ne s'applique pas dans cette situation
 
 // Question 2: Le code ne représente pas une situation commune vu dans le cours.
 
